@@ -4,11 +4,13 @@
 
 Add the plugin to your page, just before the `</body>` tag.
 
-`<script src="path/to/simple-rss.js"></script>`
+```html
+<script src="path/to/simple-rss.js"></script>
+```
 
 Create the container for the RSS feed to show in, and pass options in via `data` attributes.
 
-```
+```html
 <div data-rss-feed="http://answermethis.libsyn.com/rss" data-rss-link-titles="false" data-rss-title-wrapper="h3" data-rss-max="5"></div>
 ```
 
