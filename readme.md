@@ -19,6 +19,8 @@ Create the container for the RSS feed to show in, and pass options in via `data`
 </div>
 ```
 
+[Example](http://codepen.io/nickmoreton/pen/pEZggP)
+
 ### Options
 
 #### data-rss-feed (required)
