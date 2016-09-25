@@ -12,7 +12,7 @@ Create the container for the RSS feed to show in, and pass options in via `data`
 
 ```html
 <div 
-    data-rss-feed="http://answermethis.libsyn.com/rss" 
+    data-rss-feed="http://binonabin.tumblr.com/rss" 
     data-rss-link-titles="false" 
     data-rss-title-wrapper="h3" 
     data-rss-max="5">
