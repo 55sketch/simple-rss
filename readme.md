@@ -1,4 +1,4 @@
-# Simple RSS JS Plugin
+# Simple RSS Embed Plugin
 
 ## About
 
