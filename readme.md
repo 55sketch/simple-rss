@@ -1,5 +1,9 @@
 # Simple RSS JS Plugin
 
+## About
+
+This plugin allows you to embed content from an RSS feed on to your website using only `data` attributes directly in the HTML.
+
 ## Usage
 
 Add the plugin to your page, just before the `</body>` tag.
