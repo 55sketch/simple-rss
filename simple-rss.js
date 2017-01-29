@@ -25,7 +25,7 @@ var simpleRSSPlugin = (function() {
     // Get data - append as script with callback to avoid CORS
     var script = document.createElement('script');
 
-    script.src = document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&output=json_xml&num=10&callback=simpleRSSPlugin.handleJSON&q=' + encodeURIComponent(url);
+    script.src = document.location.protocol + '//api.rss2json.com/v1/api.json?callback=simpleRSSPlugin.handleJSON&rss_url=' + encodeURIComponent(url);
 
     document.querySelector('head').appendChild(script);
     
@@ -37,13 +37,13 @@ var simpleRSSPlugin = (function() {
   // Callback function
   function handleJSON(data) {
 
-    if (data.responseData.feed && data.responseData.feed.entries) {
+    if (data.feed && data.items) {
       
       var docFrag = document.createDocumentFragment();
 
-      for (var i = 0; i < data.responseData.feed.entries.length; i++) {
+      for (var i = 0; i < data.items.length; i++) {
 
-        var e = data.responseData.feed.entries[i];
+        var e = data.items[i];
 
         var tempNode = document.createElement('div');
 
